@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FirstRailsAppBatch734</title>
+    <title>First Rails App YAYYYY</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,20 @@
   </head>
 
   <body>
+    <div>
+      <h1>Our First Rails App</h1>
+
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Contact", contact_path %></li>
+      </ul>
+    </div>
+
     <%= yield %>
+
+    <div>
+      <p>Made with <3 at Le Wagon</p>
+    </div>
   </body>
 </html>
